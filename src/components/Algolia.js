@@ -8,7 +8,7 @@ import algoliasearch from "algoliasearch/lite"
 import {
   InstantSearch,
   SearchBox,
-  Hits,
+  // Hits,
   connectHits,
 } from "react-instantsearch-dom"
 

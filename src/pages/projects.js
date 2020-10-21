@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import { Layout, Projects, Algolia } from "../components"
-
+import SEO from "../components/seo"
 const ProjectsPage = ({ data }) => {
   const {
     allAirtable: { nodes: projects },
@@ -10,6 +10,7 @@ const ProjectsPage = ({ data }) => {
   return (
     <Wrapper>
       <Layout>
+        <SEO title="Projects" />
         <Projects tit="our projects" projects={projects} page />
         <Algolia />
       </Layout>
