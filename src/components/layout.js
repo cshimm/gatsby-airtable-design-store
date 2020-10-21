@@ -13,7 +13,6 @@ import { GatsbyContext } from "../context/context"
 
 const Layout = ({ children }) => {
   const { isSidebarOpen } = useContext(GatsbyContext)
-
   return (
     <>
       <Navbar />

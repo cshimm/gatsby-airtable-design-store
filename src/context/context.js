@@ -1,7 +1,11 @@
 import React, { useState } from "react"
 import sublinks from "../constants/links"
 
-const GatsbyContext = React.createContext()
+const defaultState = {
+  isSidebarOpen: false,
+  links: sublinks,
+}
+const GatsbyContext = React.createContext(defaultState)
 
 //Provider, consumer
 
